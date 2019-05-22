@@ -80,3 +80,26 @@ a{
     top:50%;
     margin-top:-100px;
 }
+.box-p{
+    width:100%;
+    height:30px;
+    padding:100px 20px 20px 10px;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+}
+.cube{
+    width:100%;
+}
+.cube-box{
+    width:1000px;
+    display:flex;
+    margin:0 auto;
+}
+.cube .cube-1,.cube-2,.cube-3,.cube-4{
+    flex:1;
+    border:1px solid #000;
+    text-align: center;
+    padding:30px 25px;
+    font-size:14px;
+} 
