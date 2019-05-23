@@ -125,4 +125,18 @@ a{
     }
 } */
 
-
+.pic{
+    width:100%;
+    padding:20px 40px 20px 40px;
+    background: #000;
+    display:flex;
+}
+.pic img{
+    width:360px;
+    height: 240px;
+    flex:1;
+    padding-left:25px;
+}
+.pic img:hover{
+    background: rgba(0,0,0,0.7);
+}
