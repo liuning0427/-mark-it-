@@ -98,8 +98,31 @@ a{
 }
 .cube .cube-1,.cube-2,.cube-3,.cube-4{
     flex:1;
-    border:1px solid #000;
     text-align: center;
-    padding:30px 25px;
-    font-size:14px;
+    padding:50px 40px;
+    font-size:15px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
 } 
+.cube h3{
+    font-size:20px;
+}
+.cube img{
+    width: 50px;
+    height: 50px;
+    padding:0 0 20px 0;
+}
+/* @media screen and (max-width: 960px){
+    .cube{
+        height:1000px;
+        width:100%;
+    }
+    .cube-1,.cube-2{
+        width:50%;
+    }
+    .cube-3,.cube-4{
+        display:none;
+    }
+} */
+
+
