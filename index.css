@@ -2,6 +2,9 @@
     padding:0;
     margin:0;
 }
+li{
+    list-style: none;
+}
 .container{
     width:100%;
 }
@@ -42,7 +45,7 @@ a{
     outline: none;
     background: none;
     position: absolute;
-    right:150px;
+    right:10%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -104,17 +107,20 @@ a{
 }
 .cube-box{
     width:1000px;
-    display:flex;
     margin:0 auto;
 }
-.cube .cube-1,.cube-2,.cube-3,.cube-4{
-    flex:1;
+.cube-1,.cube-2,.cube-3,.cube-4{
+    width: 170px;
+    height: 254px;
     text-align: center;
     padding:50px 40px;
     font-size:15px;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
 } 
+.cube-box li{
+    float: left;
+}
 .cube h3{
     font-size:20px;
 }
@@ -134,18 +140,23 @@ a{
     padding:20px 20px 20px 20px;
     /* background: #000; */
 }
+.pic ul{
+    float: left;
+    padding-right:10px;
+    padding-top:10px;
+}
 .pic-box{
-    display:flex;
-    width:80%;
-    margin: 0 auto;
+    width:1000px;
+    margin:0 auto;
 }
 .pic img{
     width:320px;
     height: 240px;
-    flex:1;
-    padding-right:10px;
 }
-.pic-1-1,.pic-2-1,.pic-3-1{
+.pic-1,.pic-2,.pic-3,.pic-4{
+    width:320px;
+}
+.pic-1-1,.pic-2-1,.pic-3-1,.pic-4-1{
     width:320px;
     height:240px;
     background: rgba(0,0,0,0.4);
@@ -153,7 +164,7 @@ a{
     display: none;
     pointer-events: none;  
 }
-.pic-1-1-1,.pic-2-1-1,.pic-3-1-1{
+.pic-1-1-1,.pic-2-1-1,.pic-3-1-1,.pic-4-1-1{
     width:290px;
     height: 210px;
     background: rgba(0,0,0,0.5);
@@ -171,16 +182,119 @@ a{
 }
 .pic-2-1-1 h3{
     float:right;
-    margin:150px 50px;
+    margin:100px 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .pic-3-1-1 h3{
     float:right;
-    margin:150px 50px;
+    margin:100px 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pic-4-1-1 h3{
+    float:right;
+    margin:100px 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .pic-1-1-1 p{
     margin:20px 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:20px;
+}
+.pic-2-1-1 p{
+    margin:20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:20px;
+}
+.pic-3-1-1 p{
+    margin:20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:20px;
+}
+.pic-4-1-1 p{
+    margin:20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:20px;
+}
+@media screen and (max-width:960px){
+    .cube{
+        width:100%;
+    }
+    .cube-box{
+        width:75%;
+        margin:0 auto;
+    }
+    .cube li{
+        width:37.5%;
+    }
+    .pic{
+        width: 100%;
+    }
+    .pic-box{
+        width:90%;
+    }
+    .pic-box ul{
+        width:40%;
+        padding-left:4%;
+    }
+}
+@media screen and (max-width:869px){
+    .cube{
+        width:100%;
+    }
+    .cube-box{
+        width:70%;
+        margin:0 auto;
+    }
+    .cube li{
+        width:35%;
+    }
+}
+@media screen and (max-width:779px){
+    .cube{
+        width:100%;
+    }
+    .cube-box{
+        width:70%;
+        margin:0 auto;
+    }
+    .cube li{
+        width:35%;
+    }
+    .pic{
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    .pic-box{
+        width:100%;
+        margin:0;
+    }
+    .pic ul{
+        width:100%;
+        height:100%;
+        padding:0;
+    }
+    .pic img{
+        width:100%;
+        height:100%;
+    }
+    .pic-1-1,.pic-2-1,.pic-3-1,.pic-4-1{
+        width:100%;
+        justify-content: center;
+    }
+    .pic-1-1-1,.pic-2-1-1,.pic-3-1-1,.pic-4-1-1{
+
+    }
+}
+@media screen and (max-width:768px){
+    .cube{
+        width:100%;
+    }
+    .cube-box{
+        width: 90%;
+        margin:0 auto;
+    }
+    .cube-box li{
+        width:90%;
+    }
 }

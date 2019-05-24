@@ -43,6 +43,21 @@ $(".pic-3-2").hover(function(){
         $(this).css("display", "none");
     })
 })
+$(".pic-4-2").hover(function(){
+    $(".pic-4-1").stop().fadeTo(500,1,function(){
+        $(this).css("display", "block");
+    })
+    $(".pic-4-1-1").stop().fadeTo(500,1,function(){
+        $(this).css("display", "block");
+    })
+},function(){
+    $(".pic-4-1").stop().fadeTo(500,0,function(){
+        $(this).css("display", "none");
+    })
+    $(".pic-4-1-1").stop().fadeTo(500,0,function(){
+        $(this).css("display", "none");
+    })
+})
 
 // 遇到的问题：鼠标移入元素时，遮罩层不停闪烁
 // 原因：显示层遮住了添加事件的元素，所以反复执行 onmouseover onmouseout。
