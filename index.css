@@ -8,7 +8,6 @@ li{
 .container{
     width:100%;
 }
-/* body::-webkit-scrollbar { width: 0 }; */
 .header{
     background:#f9f9f9;
     width:100%;
@@ -222,8 +221,7 @@ a{
 .details{
     display:flex;
     width:55%;
-    margin:30px auto;
-    text-align:center;
+    margin:100px auto;
 }
 .details .left,.details .right{
     flex:1;
